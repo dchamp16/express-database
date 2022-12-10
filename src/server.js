@@ -10,7 +10,6 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const port = 3001;
 
 /* database info */
 const mysql = require("mysql");
@@ -104,6 +103,8 @@ app.get("/deletepost/:id", (req, res) => {
     res.json(result);
   });
 });
+
+const port = 3001;
 
 app.listen(port, () => {
   console.log("listening at port", port);
