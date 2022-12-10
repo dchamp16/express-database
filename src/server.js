@@ -18,7 +18,7 @@ const { send } = require("process");
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "darna123",
+  password: "" /* add database xammp pass */,
   database: "nodemysql",
 });
 
